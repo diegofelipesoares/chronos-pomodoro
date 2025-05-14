@@ -10,6 +10,7 @@
   "files.eol": "\n", // Final de linha sempre será LF
 
   // 🛠 Formatação e Lint
+  //configuração está para quando salvar adicionar (; e aspas simples)
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
 
