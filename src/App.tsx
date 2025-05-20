@@ -2,6 +2,7 @@
 import { Container } from './components/Container';
 import { Heading } from './components/Heading';
 import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
 
 //importando CSS global e variáveis
 import './styles/theme.css'; //variáveis
@@ -22,7 +23,7 @@ export function App() {
       </Container>
 
       <Container>
-        <Heading>MENU</Heading>
+        <Menu />
       </Container>
 
       <Container>

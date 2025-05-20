@@ -1,0 +1,31 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+  padding-top: 3.2rem;
+  gap: 1.5rem;
+}
+
+.menuLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: var(--primary);
+  color: var(--text-over-primary);
+  transition: all 0.2s ease-in-out;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+.menuLink:hover {
+  /* Escurecendo com efeito filter */
+  filter: brightness(80%);
+}
+
+/* A menu é recebida como SVG */
+.menuLink svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
