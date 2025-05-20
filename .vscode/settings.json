@@ -8,6 +8,8 @@
   "workbench.activityBar.location": "default",
   "editor.lineNumbers": "on",
   "files.eol": "\n", // Final de linha sempre será LF
+  "workbench.editor.labelFormat": "short", //mostra na aba a pasta do arquivo
+  "editor.tabSize": 2,
 
   // 🛠 Formatação e Lint
   //configuração está para quando salvar adicionar (; e aspas simples)

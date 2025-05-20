@@ -1,10 +1,11 @@
 //importando componentes
+import { Container } from './components/Container';
 import { Heading } from './components/Heading';
+import { Logo } from './components/Logo';
 
-//importando CSS
+//importando CSS global e variáveis
 import './styles/theme.css'; //variáveis
 import './styles/global.css'; //global
-import { TimerIcon } from 'lucide-react';
 
 //Escritos em PascalCase. Ex. App, DiegoSoreas, ExDeNome
 
@@ -16,21 +17,21 @@ export function App() {
     // Renderização no HTML - HTML + JS
     // JSX - Só permite um elemento pai no return por isso o fragmento em volta de tudo
     <>
-      <Heading>
-        Oi Mundo
-        <button>
-          <TimerIcon />
-        </button>
-      </Heading>
+      <Container>
+        <Logo />
+      </Container>
 
-      <div>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
-          provident aspernatur totam voluptate, sint nisi maxime magni nulla
-          amet! Qui alias quos molestias nulla praesentium ipsum numquam earum
-          facere voluptates.
-        </p>
-      </div>
+      <Container>
+        <Heading>MENU</Heading>
+      </Container>
+
+      <Container>
+        <Heading>FORM</Heading>
+      </Container>
+
+      <Container>
+        <Heading>FOOTER</Heading>
+      </Container>
     </>
   );
 }
