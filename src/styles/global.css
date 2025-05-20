@@ -1,8 +1,20 @@
-body {
-  font-family: sans-serif;
-  font-size: 30px;
+/* Reset de estilo na página toda */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  color: var(--primary);
+/* Fazendo calculos de rem serem mais intuitivos */
+html {
+  font-size: 62.5%; /* Agora 1.2rem é igual a 12px */
+}
+
+body {
+  /* escreva SYS para melhores fontes de cada SO */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem; /* é igual a 16px */
+  background: var(--gray-900);
+  color: var(--text-default);
 }

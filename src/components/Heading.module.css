@@ -1,7 +1,6 @@
 .heading {
-  background-color: brown;
-}
-
-.cyan {
-  color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem; /* espaçamento entre titule e botão */
 }
