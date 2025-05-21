@@ -1,0 +1,7 @@
+.container {
+  /* clamp se usa para adptar o tamanho ao tamanho da tela */
+  font-size: clamp(8rem, 25vw, 16rem);
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.2;
+}

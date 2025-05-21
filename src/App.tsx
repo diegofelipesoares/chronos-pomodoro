@@ -1,12 +1,13 @@
 //importando componentes
 import { Container } from './components/Container';
-import { Heading } from './components/Heading';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 
 //importando CSS global e variáveis
 import './styles/theme.css'; //variáveis
 import './styles/global.css'; //global
+import { CountDown } from './components/CountDown';
+import { DefaultInput } from './components/DefaultInput';
 
 //Escritos em PascalCase. Ex. App, DiegoSoreas, ExDeNome
 
@@ -27,11 +28,30 @@ export function App() {
       </Container>
 
       <Container>
-        <Heading>FORM</Heading>
+        <CountDown />
       </Container>
 
       <Container>
-        <Heading>FOOTER</Heading>
+        <form className='form' action=''>
+          <div className='formRow'>
+            <DefaultInput
+              labelText='task'
+              id='meuInput'
+              type='text'
+              placeholder='Escreva'
+            />
+          </div>
+          <div className='formRow'>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className='formRow'>
+            <p>Cíclos</p>
+            <p> 0 0 0 0</p>
+          </div>
+          <div className='formRow'>
+            <button>Enviar</button>
+          </div>
+        </form>
       </Container>
     </>
   );
