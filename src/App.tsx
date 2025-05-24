@@ -2,12 +2,13 @@
 import { Container } from './components/Container';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
+import { CountDown } from './components/CountDown';
+import { DefaultInput } from './components/DefaultInput';
+import { Cycles } from './components/Cycles';
 
 //importando CSS global e variáveis
 import './styles/theme.css'; //variáveis
 import './styles/global.css'; //global
-import { CountDown } from './components/CountDown';
-import { DefaultInput } from './components/DefaultInput';
 
 //Escritos em PascalCase. Ex. App, DiegoSoreas, ExDeNome
 
@@ -45,8 +46,7 @@ export function App() {
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
           <div className='formRow'>
-            <p>Cíclos</p>
-            <p> 0 0 0 0</p>
+            <Cycles />
           </div>
           <div className='formRow'>
             <button>Enviar</button>
