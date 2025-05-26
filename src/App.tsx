@@ -5,6 +5,10 @@ import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
 import { DefaultInput } from './components/DefaultInput';
 import { Cycles } from './components/Cycles';
+import { DefaultButton } from './components/DefaultButton';
+
+//Importações Externas
+import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
 
 //importando CSS global e variáveis
 import './styles/theme.css'; //variáveis
@@ -49,7 +53,10 @@ export function App() {
             <Cycles />
           </div>
           <div className='formRow'>
-            <button>Enviar</button>
+            <DefaultButton icon={<PlayCircleIcon />} color='green' />
+            <DefaultButton icon={<StopCircleIcon />} color='red' />
+            {/* O icon está sendo usado como Children, mas não é a palavra Children
+            por isso ele não é passado entre duas tags, mas sim dentro de uma tag simples */}
           </div>
         </form>
       </Container>
