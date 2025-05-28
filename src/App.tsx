@@ -13,6 +13,7 @@ import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
 //importando CSS global e variáveis
 import './styles/theme.css'; //variáveis
 import './styles/global.css'; //global
+import { Footer } from './components/Footer';
 
 //Escritos em PascalCase. Ex. App, DiegoSoreas, ExDeNome
 
@@ -53,12 +54,14 @@ export function App() {
             <Cycles />
           </div>
           <div className='formRow'>
-            <DefaultButton icon={<PlayCircleIcon />} color='green' />
-            <DefaultButton icon={<StopCircleIcon />} color='red' />
+            <DefaultButton icon={<PlayCircleIcon />} />
             {/* O icon está sendo usado como Children, mas não é a palavra Children
             por isso ele não é passado entre duas tags, mas sim dentro de uma tag simples */}
           </div>
         </form>
+      </Container>
+      <Container>
+        <Footer />
       </Container>
     </>
   );
