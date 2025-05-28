@@ -8,7 +8,7 @@ import { Cycles } from './components/Cycles';
 import { DefaultButton } from './components/DefaultButton';
 
 //Importações Externas
-import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
+import { PlayCircleIcon } from 'lucide-react';
 
 //importando CSS global e variáveis
 import './styles/theme.css'; //variáveis
@@ -19,8 +19,6 @@ import { Footer } from './components/Footer';
 
 //cria a função com exportação
 export function App() {
-  //Funções JavaScript
-
   return (
     // Renderização no HTML - HTML + JS
     // JSX - Só permite um elemento pai no return por isso o fragmento em volta de tudo
