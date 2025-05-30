@@ -5,8 +5,8 @@ import { Menu } from '../../components/Menu';
 import { Footer } from '../../components/Footer';
 
 //importando CSS global e variáveis
-import './styles/theme.css'; //variáveis
-import './styles/global.css'; //global
+import '../../styles/theme.css'; //variáveis
+import '../../styles/global.css'; //global
 
 //Tipando Children
 type MainTemplateProps = {
@@ -16,8 +16,9 @@ type MainTemplateProps = {
 //cria a função com exportação
 export function MainTemplate({ children }: MainTemplateProps) {
   return (
-    // Renderização no HTML - HTML + JS
-    // JSX - Só permite um elemento pai no return por isso o fragmento em volta de tudo
+    /* O template será chamado em todas as páginas para manter a estrutura
+    Dentro dele temos o children, que trará 
+    o conteúdo específico de cada página */
     <>
       <Container>
         <Logo />
