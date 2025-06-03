@@ -7,7 +7,6 @@ import { PlayCircleIcon } from 'lucide-react';
 export function MainForm() {
   return (
     // Renderizando o formulário
-
     <form className='form' action=''>
       <div className='formRow'>
         <DefaultInput
@@ -18,7 +17,7 @@ export function MainForm() {
         />
       </div>
       <div className='formRow'>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>O próximo intervalo é de 25min</p>
       </div>
       <div className='formRow'>
         <Cycles />
