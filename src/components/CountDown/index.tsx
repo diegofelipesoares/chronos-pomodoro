@@ -1,8 +1,11 @@
+import { useTaskContext } from '../../contexts/TaskContext/useTaskContext';
 import styles from './styles.module.css';
 
-//Tipando o objeto Children da Props
-
-//Children desestruturado --> Acesso direto sem escrever Props
 export function CountDown() {
-  return <div className={styles.container}>00:00</div>;
+  //usando função de acesso ao estado do Context
+  const { state } = useTaskContext();
+
+  return (
+    <div className={styles.container}>{state.formattedSecondsRemaining}</div>
+  );
 }
