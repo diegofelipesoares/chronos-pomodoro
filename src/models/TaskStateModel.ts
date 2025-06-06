@@ -13,6 +13,6 @@ export type TaskStateModel = {
     workTime: number; // Tempo de trabalho em minutos
     shortBreakTime: number; // Tempo de descanso curto em minutos
     longBreakTime: number; // Tempo de descanso longo em minutos
-    longBreakInterval?: number; // Intervalo para descanso longo em ciclos (ex: a cada 4 ciclos)
+    longBreakInterval: number; // Intervalo para descanso longo em ciclos (ex: a cada 4 ciclos)
   };
 };

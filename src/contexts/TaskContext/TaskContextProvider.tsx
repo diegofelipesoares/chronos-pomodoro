@@ -10,6 +10,8 @@ type TaskContextProviderProps = {
 //Criando função para tirar provider de dentro do App.tsx
 export function TaskContextProvider({ children }: TaskContextProviderProps) {
   const [state, setState] = useState(initialTaskState);
+  // Visualizar no console os dados do state sempre que ele for atualizado
+  console.log('TaskContext state:', state);
 
   return (
     <TaskContext.Provider value={{ state, setState }}>
